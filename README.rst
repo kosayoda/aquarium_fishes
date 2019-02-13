@@ -2,35 +2,43 @@ aquarium_fishies
 =================
 
 Loads https://webglsamples.org/aquarium/aquarium.html, spawns fishes and set certain settings from the command-line.
+
 Uses Selenium to spawn the browser. Currently supported are: Firefox, Google Chrome.
+
 Only tested on Python >3.6.
 
 Installation
 -------------
-1. Download the tar.gz file from here.
+1. Download the tar.gz file from `here`_.
+
+.. _here: https://github.com/kosayoda/aquarium_fishes/releases/
 2. In the same directory as the tar.gz file, run ``pip install <filename>``.
 3. Run ``fishes -h`` to see a list of arguments.
 
 Manual Installation
 -------------------
-- Requirements
-#) Python >3.6
-#) selenium >3.1
-#) webdriver_manager >1.7
+Requirements
+------------
+- Python >3.6
+- selenium >3.1
+- webdriver_manager >1.7
 
-- Installation
-1) Click the "Clone or download" button in the top right corner then click "Download ZIP"
-1b) Alternatively, clone the repository using ``git clone``.
+Installation
+-------------
+1) Click the "Clone or download" button in the top right corner then click "Download ZIP". Alternatively, clone the repository using ``git clone``.
+
 2) Unpack the zip file
+
 3) Run the main script
 ::
     cd fishes
     python __main__.py
 
 Usage
-------
+-----
+fishes -h
 ::
-    usage: __main__.py [-h] [-v] [-f] [-s] [-fs] browser
+    usage: fishes [-h] [-v] [-f] [-s] [-fs] browser
 
     Spawns an aquarium from https://webglsamples.org/aquarium/aquarium.html in the
     browser
